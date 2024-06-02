@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+</head>
+<body>
+
+<h1>¿Qué entidades consideraste más importantes para nuestro modelo de datos de biblioteca y por qué?</h1><P>Entidades importantes y por qué: Consideré las entidades Libro, Usuario, Autor, Prestamo y Editorial como las más importantes. Esto se debe a que son elementos clave en el funcionamiento de una biblioteca: los libros son los recursos principales, los usuarios son quienes acceden a esos recursos, los autores son los creadores de los libros, los préstamos registran las interacciones entre usuarios y libros, y las editoriales son las entidades que publican los libros.</P>
+<h1>¿Cuáles son los atributos esenciales que deben incluirse para cada entidad?</h1><p>Atributos esenciales para cada entidad: 
+    Libro: ISBN, título, autores, editorial, año de publicación, género, número de ejemplares.
+    Usuario: ID de usuario, nombre, dirección, correo electrónico, número de teléfono.
+    Autor: ID de autor, nombre del autor, nacionalidad.
+    Prestamo: ID de préstamo, ID de usuario, ISBN del libro, fecha de préstamo, fecha de devolución.
+    Editorial: ID de editorial, nombre de la editorial, direcció</p>
+<h1>¿Cómo manejarías las relaciones entre las entidades? Por ejemplo, ¿cómo representarías la relación entre un libro y su autor?</h1><p>Manejo de relaciones entre entidades: Se pueden representar las relaciones entre un libro y su autor mediante una clave foránea en la tabla de libros que haga referencia a la tabla de autores. Por ejemplo, en una base de datos relacional, la tabla de libros podría tener una columna "autor_id" que se relaciona con el ID del autor en la tabla de autores.</p>
+<h1>¿Qué tipo de restricciones de integridad deberíamos aplicar en nuestro modelo de datos para garantizar la consistencia y la precisión de la información?</h1><p>Restricciones de integridad: Podríamos aplicar restricciones como claves primarias y foráneas para mantener la integridad de los datos y asegurar la consistencia. Restricciones de no nulidad y de unicidad ayudarían a garantizar que los campos obligatorios estén completos y evitar duplicados.</p>
+<h1>¿Qué consideraciones tendríamos que tener en cuenta al diseñar la estructura de la base de datos para optimizar el rendimiento y la escalabilidad?</h1><p>Consideraciones de rendimiento y escalabilidad: Es importante indexar campos utilizados frecuentemente en consultas, normalizar la base de datos para reducir la redundancia y mejorar la eficiencia del almacenamiento, utilizar particionamiento para distribuir la carga de trabajo en varios servidores, e implementar caché para mejorar el acceso a los datos frecuentemente consultados.</p>
+<h1>¿Qué tipos de consultas o análisis podríamos realizar utilizando este modelo de datos? Por ejemplo, ¿cómo podríamos encontrar todos los libros prestados por un usuario específico?</h1><p>Consultas y análisis posibles: Con este modelo de datos, podríamos realizar consultas como encontrar todos los libros prestados por un usuario específico, obtener la lista de todos los préstamos activos en un momento dado, calcular el número promedio de préstamos por usuario, e identificar los libros más populares basados en el número de préstamos.</p>
+<h1>¿Existen otras entidades o relaciones que podríamos haber pasado por alto en nuestro modelo inicial? ¿Cómo podríamos mejorar nuestro diseño para abordar esas omisiones?</h1><p>Entidades o relaciones pasadas por alto: Podríamos haber pasado por alto la entidad "Categoría", que podría clasificar los libros por género o tema. Para abordar esta omisión, podríamos agregar una tabla de categorías y establecer relaciones entre libros y categorías para permitir búsquedas y análisis basados en categorías.</p>
+
+
+</body>
+</html>
